@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRESS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .all {
+            margin-left: 90px;
+            margin-right: 90px;
+            margin-top: 40px;
+        }
+
+        .heading{
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .date{
+            background-color: turquoise;
+            color: white;
+            width: 100%;
+            border-radius: 5px;
+            padding: 18px;
+            border:1px solid rgb(2, 113, 165);
+            margin:auto;
+            margin-top: 20px;
+            transition: 0.4s;
+            display: inline-block;
+        }
+
+        /* .date::after{
+            content:"\1F447";
+        } */
+        .active:after{
+            content: "\1F447";
+            padding-left: 100%;
+        }
+        .date::before{
+            content: "\1F447";
+            padding-left: 100%;
+        }
+
+        .active:before{
+            content:none;
+        }
+        .date:hover{
+            background-color: #f4f4f4;
+        }
+        
+        .notes{
+            padding: 0px 18px;
+            margin-top: 10px;
+            background-color: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+         /* MOBILE */
+       @media screen and (max-width: 768px) {
+           /* body{
+               display: none;
+           } */
+           .all {
+               margin: 0px;
+               padding: 0px;
+           }
+       }
+    </style>
+</head>
+<body>
+    <nav>
+      <div class="logo">
+        <img class="image" src="./images/Group 6.png" alt="" />
+        <h4>SINSEI</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./notes.html">LESSONS</a>
+        </li>
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="all">
+        <div class="heading">
+            <h2>This is the heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, laboriosam.</p>
+        </div>
+
+        <button class="date">
+          
+            Day 1 <br> Monday 20th
+            </button>
+           
+            <div class="notes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, expedita? Esse, aliquam inventore natus nam quod nihil quia sunt unde, possimus molestias sequi omnis. Alias sunt dolorum sapiente non quo?</p>
+            </div>
+        
+     <button class="date">
+            Day 1 <br> Monday 20th
+             </button>
+            <div class="notes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, expedita? Esse, aliquam inventore natus nam quod nihil quia sunt unde, possimus molestias sequi omnis. Alias sunt dolorum sapiente non quo?</p>
+            </div>
+    
+         <button class="date">
+            Day 1 <br> Monday 20th
+            </button>
+            <div class="notes">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, expedita? Esse, aliquam inventore natus nam quod nihil quia sunt unde, possimus molestias sequi omnis. Alias sunt dolorum sapiente non quo?</p>
+            </div>
+     </div>
+
+     <script>
+         var acc = document.getElementsByClassName("date");
+         var i;
+
+         for (i = 0; i < acc.length; i++) {
+             acc[i].addEventListener("click", function() {
+                 this.classList.toggle("active");
+                 var panel = this.nextElementSibling;
+                 if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                 } else {
+                     panel.style.maxHeight = panel.scrollHeight + "px";
+                 }
+             });
+         }
+     </script>
+</body>
+</html>
