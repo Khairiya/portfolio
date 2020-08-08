@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Code+Pro:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Source+Code+Pro:ital,wght@1,500&family=Suwannaphum&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+    font-family: "Suwannaphum", cursive;
+    font-size: 35px;
+    color: lightcoral !important;
+}
+
+.nav-link {
+    font-size: 16px;
+    margin: 15px;
+    color: black !important;
+}
+
+.nav-link:hover {
+    color: blue !important;
+}
+
+.active .nav-link {
+    color: blue !important;
+}
+
+.menu-right-btn {
+    padding: 13px 46px;
+    margin-right: 4%;
+    background-color:transparent;
+    transition: all 300ms ease-in;
+}
+
+.menu-right-btn:hover {
+    color: white;
+    background-color:blue;
+}
+
+.site-content {
+    background-image: url(./images/macbook.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-title, .site-desc {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-title {
+    margin-top: 30%;
+    margin-bottom: 6%;
+    font-style: 50px;
+}
+
+.d-flex {
+    padding-bottom:40px;
+   
+}
