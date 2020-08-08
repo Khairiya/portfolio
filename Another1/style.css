@@ -45,7 +45,7 @@ body {
 }
 
 .site-content {
-    background-image: url(./images/macbook.jpg);
+    background-image: url(./images/lovely.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,6 +63,127 @@ body {
 }
 
 .d-flex {
-    padding-bottom:40px;
-   
+    padding-bottom:40px;  
 }
+
+.site-desc {
+    font-size: 14px;
+    padding-left: 15%;
+}
+
+.site-btn1 {
+    margin-left: 30%;
+    background-color:blck;
+    color: white;
+}
+
+.site-btn2 {
+    background-color:white;
+}
+
+.site-btn1,.site-btn2 {
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+
+.section-1 .heading-1 {
+    margin-top: 8%;
+}
+
+.section-1 .heading-2 {
+    margin-bottom: 5%;
+}
+
+.section-1 .para-1 {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section-1 .card-text,.para-1 {
+    color: rgb(221, 109, 142);
+}
+
+.section-1 {
+    margin-bottom: 8%;
+}
+
+.card {
+    width: 20rem;
+}
+
+.card img {
+    width: 318px;
+    height: 239.41px;
+}
+
+.section-2  .container-fluid {
+    background-image: url(./images/pretty.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-2 .heading-1 {
+    margin-top: 20%;
+    margin-bottom: 4%;
+    font-family: monospace;
+    width: 80%;
+    color: white;
+}
+
+.section-2 .para {
+    width: 80%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    margin-bottom: 7%;
+}
+
+.section-2 .btn {
+    margin-bottom: 15%;
+    width: 30%;
+    padding: 2% 5%;
+}
+
+.section-3 {
+    margin-top: 6%;
+}
+
+.section-3 i {
+    color: teal;
+}
+
+.section-3 p {
+    color: teal;
+}
+
+.section-4 {
+    margin-top: 8%;
+}
+
+.section-4 .row .col-md-7,.col-md-5 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.section-4 a {
+    color: tomato;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.section-4 a:hover {
+    color: teal;
+}
+
+.section-4 .para-1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 7%;
+    font-size: 20px;
+}
+
+.social i{
+    color: tomato;
+    font-size: 30px;
+}
+

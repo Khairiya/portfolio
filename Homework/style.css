@@ -1,0 +1,23 @@
+body {
+    background-color: #000000;
+}
+
+.btn {
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(247, 231, 140);
+    color: #000000;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-md-4{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
